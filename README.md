@@ -5,3 +5,7 @@ Project inspired by this link: https://bruceknuteson.github.io/spy-day-and-night
 This is my first major project, and as such there is room for improvement. First, I must find a better way to obtain financial data. The current solution takes over 20 minutes to download all the data for just over 12 years. The original paper analyzed data going back to 1990. Second, it would make sense to define functions to call to complete the analysis, in the interest of neatness and perhaps efficiency.
 
 I am a novice coder, so alternative methods for the two aforementioned problems are welcome. Also welcome are insights into other areas of improvement which I may have missed.
+
+Edit 1: 
+O v I new:
+Learned how to successfully scrape data from the internet, implemented the yfinance library instead of pandas-datareader (data took 1/4th the time to download), implemented pickle files to save downloaded data, defined functions for neatness. Further improvements include figuring out relationship between overnight and itraday returns to yield total returns.
