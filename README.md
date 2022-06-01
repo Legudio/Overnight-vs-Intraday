@@ -8,4 +8,4 @@ I am a novice coder, so alternative methods for the two aforementioned problems 
 
 Edit 1: 
 O v I new:
-Learned how to successfully scrape data from the internet, implemented the yfinance library instead of pandas-datareader (data took 1/4th the time to download), implemented pickle files to save downloaded data, defined functions for neatness. Further improvements include figuring out relationship between overnight and itraday returns to yield total returns.
+Learned how to successfully scrape data from the internet, implemented the yfinance library instead of pandas-datareader (data took 1/4th the time to download), implemented pickle files to save downloaded data, defined functions for neatness. Further improvements include figuring out relationship between overnight and intraday returns to yield total returns, and figuring out how to use github.
