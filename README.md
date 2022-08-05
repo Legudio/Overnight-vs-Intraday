@@ -1,11 +1,7 @@
 # Overnight-vs-Intraday
 
-Project inspired by this link: https://bruceknuteson.github.io/spy-day-and-night/ and the paper within titled "They Still Haven't Told You" (2022). Reading the paper, I didn't believe the main conclusion: that most major stock indices experience the majority of their growth overnight. Though I realized this hypothesis would be fairly straight forward to test. 24 hours later, I had my answer: the SPY index did indeed have a negative return intraday, and a large return overnight. In fact, more than half of the components (270) had greater returns overnight than intraday.
+Project inspired by this link: https://bruceknuteson.github.io/spy-day-and-night/ and the paper within titled "They Still Haven't Told You" (2022). Reading the paper, I didn't believe the main conclusion: that most major stock indices experience the majority of their growth overnight. 
 
-This is my first major project, and as such there is room for improvement. First, I must find a better way to obtain financial data. The current solution takes over 20 minutes to download all the data for just over 12 years. The original paper analyzed data going back to 1990. Second, it would make sense to define functions to call to complete the analysis, in the interest of neatness and perhaps efficiency.
+Testing was fairly straight forward, however, scraping component data was not. Though certain websites were friendlier than others. I then created a dataframe with equities from each index tested. To do this, I first found the overnight returns of all equities, excluded those with overnight returns less than intraday, then sorted the overnight returns greatest to least. I then took the top quintile of these sorted equities. 
 
-I am a novice coder, so alternative methods for the two aforementioned problems are welcome. Also welcome are insights into other areas of improvement which I may have missed.
-
-Edit 1: 
-O v I new:
-Learned how to successfully scrape data from the internet, implemented the yfinance library instead of pandas-datareader (data took 1/4th the time to download), implemented pickle files to save downloaded data, defined functions for neatness. Further improvements include figuring out relationship between overnight and intraday returns to yield total returns, and figuring out how to use github.
+I will use this list of high performing equities in another project.
